@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="js/timer.js"></script>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Launch countdown timer</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1 class="header__title">We're launching soon</h1>
+      </header>
+
+      <section class="timer">
+        <section class="timer__value">
+          <section class="countdown">
+            <canvas id="days"></canvas>
+          </section>
+
+          <section class="timer__label">
+            <p>Days</p>
+          </section>
+        </section>
+
+        <section class="timer__value">
+          <section class="countdown">
+            <canvas id="hours"></canvas>
+          </section>
+          <section class="timer__label">
+            <p>Hours</p>
+          </section>
+        </section>
+
+        <section class="timer__value">
+          <section class="countdown">
+            <canvas id="minutes"></canvas>
+          </section>
+          <section class="timer__label">
+            <p>Minutes</p>
+          </section>
+        </section>
+
+        <section class="timer__value">
+          <section class="countdown">
+            <canvas id="seconds"></canvas>
+          </section>
+          <section class="timer__label">
+            <p>Seconds</p>
+          </section>
+        </section>
+      </section>
+
+      <nav class="footer__nav">
+        <a href=""> <i class="fa-brands fa-square-facebook nav__link"></i> </a>
+        <a href=""><i class="fa-brands fa-pinterest nav__link"></i></a>
+        <a href=""><i class="fa-brands fa-instagram nav__link"></i></a>
+      </nav>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Igor</a>.
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/fa8786ff19.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

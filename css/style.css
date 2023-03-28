@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+/* vars */
+/* Blocks */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.5rem, 3vw, 4rem);
+  padding: clamp(3rem, 5%, 10rem) 1rem;
+  padding-bottom: 25%;
+}
+
+/* END BLOCKS */
+/* ElEMENTS */
+.timer__value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.5rem, 4vw, 2rem);
+}
+
+.countdown {
+  position: relative;
+  background-color: hsl(236, 21%, 26%);
+  width: clamp(3rem, 20vw, 15rem);
+  height: clamp(3rem, 20vw, 15rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: clamp(2rem, 10vw, 9rem);
+  font-family: "Red Hat Text", sans-serif;
+  box-shadow: 0px 15px 3px rgba(2, 2, 2, 0.2549019608);
+}
+
+.rotate {
+  transform-origin: center;
+  transform: rotateX(360deg);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.timer__label {
+  text-transform: uppercase;
+  letter-spacing: 0.4ch;
+  font-size: clamp(0.6rem, 2vw, 1rem);
+}
+
+/* END ELEMENTS */
+/* animation */
+/* end animation */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* END RESET */
+/* GENERAL STYLEs */
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  min-height: 100vh;
+  font-size: 0.89rem;
+  background-color: hsl(235, 16%, 14%);
+  color: hsl(237, 18%, 59%);
+  background-image: linear-gradient(hsl(234, 17%, 12%), #2f2439);
+}
+
+main {
+  min-height: 95vh;
+  background-image: url("/images/pattern-hills.svg"), url(/images/bg-stars.svg);
+  background-repeat: no-repeat, repeat;
+  background-size: 160% 20%;
+  background-position: 22% bottom, top;
+}
+
+/* END GENERAL STYLEs */
+/* BLOCKS */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: clamp(3rem, 10%, 4rem) 1.6rem;
+}
+
+/* END BLOCKS */
+/* ELEMENTS */
+.header__title {
+  color: white;
+  text-align: center;
+  letter-spacing: 0.5ch;
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+}
+
+.footer__nav {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav__link {
+  font-size: 2rem;
+  color: hsl(237, 18%, 59%);
+}
+
+.nav__link:hover {
+  color: hsl(345, 95%, 68%);
+}
+
+/* END ELEMENTS */
+/* MEDIA */
+@media screen and (min-width: 720px) {
+  main {
+    background-size: 100%, auto;
+  }
+  .footer__nav {
+    position: static;
+    padding: 5%;
+  }
+}
+/* END MEDIA *//*# sourceMappingURL=style.css.map */

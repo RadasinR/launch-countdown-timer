@@ -1,0 +1,57 @@
+@import 'colors';
+/* vars */
+$side: clamp(3rem, 20vw, 15rem);
+$FS-Number: clamp(2rem, 10vw, 9rem);
+/* Blocks */
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.5rem,3vw ,4rem);
+    padding: clamp(3rem, 5%, 10rem) 1rem;
+    padding-bottom: 25%;
+}
+/* END BLOCKS */
+/* ElEMENTS */
+.timer__value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.5rem, 4vw, 2rem);
+  
+}
+
+
+.countdown {
+    position: relative;
+    background-color: $timer-bg;
+    width: $side;
+    height: $side;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-size: $FS-Number;
+    font-family: $ff;
+    box-shadow: 0px 15px 3px #02020241;
+   
+}
+
+.rotate {
+    transform-origin: center;
+    transform: rotateX(360deg);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.timer__label {
+    text-transform: uppercase;
+    letter-spacing: 0.4ch;
+    font-size: clamp(0.6rem, 2vw ,1rem);
+}
+/* END ELEMENTS */
+/* animation */
+
+
+/* end animation */
