@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [git](https://github.com/RadasinR/launch-countdown-timer.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [vercel](https://launch-countdown-timer-seven.vercel.app/)
 
 ## My process
 
